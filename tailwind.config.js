@@ -1,6 +1,11 @@
 module.exports = {
   mode: "jit",
-  purge: ["./*.html"],
+  content: [
+    // Example content paths...
+    './*.html',
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
